@@ -60,6 +60,9 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
+    opacity: 1; /* 默认不透明 */
+    visibility: visible; /* 默认可见 */
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
 /* 箭头样式 */
@@ -68,7 +71,8 @@
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 15px solid #87CEFA; /* 箭头颜色 */
+    background: linear-gradient(to bottom, #d3d3d3, #808080); /* 从浅灰色到深灰色的渐变 */
+    border-bottom: 15px solid transparent; /* 覆盖默认的单色边框 */
     animation: bounce 2s infinite;
 }
 
@@ -83,4 +87,4 @@
     60% {
         transform: translateY(-15px);
     }
-}
+}        
