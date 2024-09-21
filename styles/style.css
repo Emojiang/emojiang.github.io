@@ -9,20 +9,24 @@ background-image:url("../images/Demo.png");
  h1.fir{
   color:#87CEFA;
   text-align:center;
-  font-size:64px;
+  font-size:72px;
   position: relative;
   top: 30%;
 }
  h2.fir{
   color:#000; 
   text-align:center;
-  font-size:48px;
+  font-size:64px;
   position: relative;
   top: 32%;
 }
-ul,
 li.first {
   color:#000000;
   text-align:left;
-  font-size:24px;
+  font-size:48px;
+}
+p.first {
+  color:#000000;
+  text-align:left;
+  font-size:32px;
 }
