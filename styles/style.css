@@ -55,6 +55,11 @@
     background-color: #79b8d6; /* 按钮悬停时的背景颜色 */
 }
 
+
+    transform: translateX(-50%) rotate(45deg);
+    transform-origin: 0 0;
+}
+
 /* 箭头容器 */
 .arrow-container {
     position: fixed;
