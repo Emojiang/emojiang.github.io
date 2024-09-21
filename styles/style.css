@@ -71,10 +71,10 @@
 .arrow {
     width: 0;
     height: 0;
-    border-left: 20px solid transparent; /* 调整大小 */
-    border-right: 20px solid transparent; /* 调整大小 */
-    border-bottom: 30px solid transparent; /* 透明边框 */
-    background: linear-gradient(to bottom, black, #d3d3d3); /* 从黑色到浅灰色的渐变 */
+    border-left: 15px solid transparent; /* 缩小箭头大小 */
+    border-right: 15px solid transparent; /* 缩小箭头大小 */
+    border-bottom: 20px solid transparent; /* 透明边框 */
+    background: linear-gradient(to bottom, #a9a9a9, #d3d3d3); /* 从深灰色到浅灰色的渐变 */
     display: inline-block; /* 使背景渐变生效 */
     animation: bounce 2s infinite;
 }
@@ -85,9 +85,9 @@
         transform: translateY(0);
     }
     40% {
-        transform: translateY(-20px);
+        transform: translateY(-15px);
     }
     60% {
-        transform: translateY(-10px);
+        transform: translateY(-7px);
     }
 }
