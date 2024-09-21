@@ -108,3 +108,31 @@
         transform: translateY(-10px);
     }
 }
+/* 箭头容器 */
+.arrow-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* 高z-index确保在顶层 */
+}
+
+/* 箭头样式 */
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; /* 透明左边框 */
+    border-right: 10px solid transparent; /* 透明右边框 */
+    border-top: 15px solid black; /* 实色上边框，形成箭头 */
+    animation: bounce 2s infinite;
+}
+
+/* 箭头动画 */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
