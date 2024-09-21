@@ -1,34 +1,55 @@
+/* 默认背景图 */
+.background-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('default-background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.body1{
-	background-color:#fff;
+/* PC端背景图 */
+@media (min-width: 1024px) {
+    .background-container {
+        background-image: url('../images/Demo.png');
+    }
 }
-.div1{
-width:100%;
-height:100%;
-margin:0px;
-background: url:("../images/Demo.png")
+
+/* 手机端背景图 */
+@media (max-width: 1023px) {
+    .background-container {
+        background-image: url('Phone-Demo);
+    }
 }
- h1.fir{
-  color:#87CEFA;
-  text-align:center;
-  font-size:84px;
-  position: relative;
-  top: 30%;
+
+/* 居中容器 */
+.content {
+    text-align: center;
 }
- h2.fir{
-  color:#000; 
-  text-align:center;
-  font-size:56px;
-  position: relative;
-  top: 32%;
+
+/* 文本样式 */
+.content h1 {
+    color: #87CEFA;
+    margin-bottom: 20px; /* 在文本和按钮之间添加一些间距 */
 }
-li.first {
-  color:#000000;
-  text-align:left;
-  font-size:48px;
+
+/* 按钮样式 */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #87CEFA;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* 移除链接的下划线 */
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-p.first {
-  color:#000000;
-  text-align:left;
-  font-size:32px;
+
+/* 按钮悬停效果 */
+.button:hover {
+    background-color: #79b8d6; /* 按钮悬停时的背景颜色 */
 }
