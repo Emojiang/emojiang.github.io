@@ -61,20 +61,17 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1000; /* 高z-index确保在顶层 */
-    opacity: 1; /* 默认不透明 */
-    visibility: visible; /* 默认可见 */
-    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000; /* 确保在顶层 */
 }
 
 /* 箭头样式 */
 .arrow {
     width: 0;
     height: 0;
-    border-left: 15px solid transparent; /* 缩小箭头大小 */
-    border-right: 15px solid transparent; /* 缩小箭头大小 */
-    border-bottom: 20px solid transparent; /* 透明边框 */
-    background: linear-gradient(to bottom, #a9a9a9, #d3d3d3); /* 从深灰色到浅灰色的渐变 */
+    border-left: 10px solid transparent; /* 缩小箭头大小 */
+    border-right: 10px solid transparent; /* 缩小箭头大小 */
+    border-bottom: 15px solid #808080; /* 深灰色边框 */
+    background: linear-gradient(to bottom, #808080, #d3d3d3); /* 从深灰色到浅灰色的渐变 */
     display: inline-block; /* 使背景渐变生效 */
     animation: bounce 2s infinite;
 }
@@ -85,9 +82,9 @@
         transform: translateY(0);
     }
     40% {
-        transform: translateY(-15px);
+        transform: translateY(-10px);
     }
     60% {
-        transform: translateY(-7px);
+        transform: translateY(-5px);
     }
 }
