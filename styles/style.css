@@ -20,8 +20,9 @@ background-image:url("../images/Demo.png");
   position: relative;
   top: 32%;
 }
-ul li.first {
-  color: 	#000000;
+ul,
+li.first {
+  color:#000000;
   text-align:left;
   font-size:24px;
 }
