@@ -53,6 +53,8 @@
 .button:hover {
     background-color: #79b8d6; /* 按钮悬停时的背景颜色 */
 }
+
+
 /* 箭头容器 */
 .arrow-container {
     position: fixed;
@@ -71,8 +73,9 @@
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    background: linear-gradient(to bottom, #d3d3d3, #808080); /* 从浅灰色到深灰色的渐变 */
-    border-bottom: 15px solid transparent; /* 覆盖默认的单色边框 */
+    border-bottom: 15px solid transparent; /* 使渐变效果可见 */
+    background: linear-gradient(to bottom, black, #d3d3d3); /* 从黑色到浅灰色的渐变 */
+    display: inline-block; /* 使背景渐变生效 */
     animation: bounce 2s infinite;
 }
 
@@ -82,9 +85,9 @@
         transform: translateY(0);
     }
     40% {
-        transform: translateY(-30px);
+        transform: translateY(-10px);
     }
     60% {
-        transform: translateY(-15px);
+        transform: translateY(-5px);
     }
-}        
+}
