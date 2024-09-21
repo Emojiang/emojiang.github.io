@@ -3,8 +3,11 @@
 }
 .div1{
 width:100%;
-height:100%;
-background-image:url("../images/Demo.png");
+height:100%; 
+background-image: url('../images/Demo.png);
+background-size: cover; /* 确保图片覆盖整个元素 */  
+background-position: center; /* 将图片居中显示 */  
+min-height: 100vh; /* 确保至少为视口高度 */
 }
  h1.fir{
   color:#87CEFA;
