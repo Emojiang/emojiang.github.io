@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* 添加相对定位 */
 }
 
 /* PC端背景图 */
@@ -54,7 +55,6 @@
     background-color: #79b8d6; /* 按钮悬停时的背景颜色 */
 }
 
-
 /* 箭头容器 */
 .arrow-container {
     position: fixed;
@@ -73,7 +73,7 @@
     height: 0;
     border-left: 20px solid transparent; /* 调整大小 */
     border-right: 20px solid transparent; /* 调整大小 */
-    border-bottom: 30px solid black; /* 黑色边框 */
+    border-bottom: 30px solid transparent; /* 透明边框 */
     background: linear-gradient(to bottom, black, #d3d3d3); /* 从黑色到浅灰色的渐变 */
     display: inline-block; /* 使背景渐变生效 */
     animation: bounce 2s infinite;
