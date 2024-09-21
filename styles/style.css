@@ -20,7 +20,7 @@
 /* 手机端背景图 */
 @media (max-width: 1023px) {
     .background-container {
-        background-image: url('Phone-Demo);
+        background-image: url('Phone-Demo.png');
     }
 }
 
